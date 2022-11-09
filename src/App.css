@@ -1,0 +1,9 @@
+/* style={{background:'black',color:"white",padding:'10px',display:'flex',justifyContent:'center'}} */
+
+.game-container>header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
