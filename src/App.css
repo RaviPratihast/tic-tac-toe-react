@@ -1,9 +1,32 @@
-/* style={{background:'black',color:"white",padding:'10px',display:'flex',justifyContent:'center'}} */
 
 .game-container>header{
-    background-color: black;
-    color: white;
+    background-color:var(--bg-color);
+    color:var(--txt-color);
     display: flex;
     justify-content: center;
     padding: 20px;
 }
+
+.game-container>.game-board{
+    /* border: 2px solid black; */
+    margin-inline:auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+
+.game-board-row{
+    display: flex;
+    /* border: 2px solid black; */
+    flex-direction: column;
+}
+
+.game-board-row>.cell{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border: 1px solid black;
+}
+
