@@ -75,7 +75,7 @@ function App(){
     {isWinner? <div className="winner-container">
     <h1>{isWinner} Won 🥳!!!</h1>
     <button onClick={handleReset}>Play Again</button>
-    </div> : <>
+    </div> : 
     <div className="game-board">
         <div className="game-board-row game-board-row-1">
 
@@ -100,11 +100,13 @@ function App(){
         </div>
         
     </div>
-    </>}
+    }
    
+        <footer><h1>ravipratihast</h1></footer>
 
-    {/* footer */}
     </div>
+   
+  
 }
 
 export default App;
