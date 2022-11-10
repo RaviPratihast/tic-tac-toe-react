@@ -12,6 +12,7 @@
     margin-inline:auto;
     width: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top:50px;
@@ -20,13 +21,18 @@
 .game-board-row{
     display: flex;
     /* border: 2px solid black; */
-    flex-direction: column;
+    /* flex-direction: column; */
+
 }
 
 .game-board-row>.cell{
+
+    height: 100px;
+    width: 100px;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    align-items: center;
+    /* padding: 40px; */
     border: 1px solid black;
 }
 
