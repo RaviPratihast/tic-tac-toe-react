@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:50px;
+    margin-top:140px;
 }
 
 .game-board-row{
@@ -34,8 +34,40 @@
     align-items: center;
     /* padding: 40px; */
     border: 1px solid black;
+    font-size: 70px;
+    font-weight: bold;
 }
 
+.game-board-row>.cell-1{
+    border-top: none;
+    border-left: none;
+}
+.game-board-row>.cell-2{
+    border-top: none;
+}
+.game-board-row>.cell-3{
+    border-top: none;
+    border-right: none;
+}
+.game-board-row>.cell-4{
+    border-left: none;
+    /* border-top: none;
+    border-right: none; */
+}
+.game-board-row>.cell-6{
+    border-right: none;
+}
+.game-board-row>.cell-7{
+    border-bottom: none;
+    border-left: none;
+}
+.game-board-row>.cell-8{
+    border-bottom: none;
+}
+.game-board-row>.cell-9{
+    border-bottom: none;
+    border-right: none;
+}
 
 .winner-container{
     height: 400px;
