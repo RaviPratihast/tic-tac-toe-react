@@ -60,6 +60,12 @@ function App(){
     // console.log(winner)
     const isWinner=winner();
 
+    // handleReset
+
+    function handleReset(){
+        setCell(Array(9).fill(null));
+    }
+
     return <div className="game-container">
     {/* header */}
     <header><h1>Tic Tac Toe</h1></header>
@@ -68,7 +74,7 @@ function App(){
     {/* game-board */}
     {isWinner? <div className="winner-container">
     <h1>{isWinner} Won 🥳!!!</h1>
-    <button className="handleReset">Play Again</button>
+    <button onClick={handleReset}>Play Again</button>
     </div> : <>
     <div className="game-board">
         <div className="game-board-row game-board-row-1">
