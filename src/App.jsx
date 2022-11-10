@@ -66,7 +66,10 @@ function App(){
 
 
     {/* game-board */}
-    {isWinner? <>{isWinner} is won</> : <>
+    {isWinner? <div className="winner-container">
+    <h1>{isWinner} Won 🥳!!!</h1>
+    <button className="handleReset">Play Again</button>
+    </div> : <>
     <div className="game-board">
         <div className="game-board-row game-board-row-1">
 
