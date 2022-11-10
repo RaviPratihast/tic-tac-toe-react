@@ -102,7 +102,7 @@ function App(){
     </div>
     }
    
-        <footer><h1>ravipratihast</h1></footer>
+        <footer><h4>ravipratihast &#169; 2022</h4></footer>
 
     </div>
    
