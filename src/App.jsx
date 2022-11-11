@@ -26,17 +26,18 @@ function App(){
    
 
    
+    const winningLogic=[
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [6,4,2]
+    ]
+
     function winner(){
-        const winningLogic=[
-            [0,1,2],
-            [3,4,5],
-            [6,7,8],
-            [0,3,6],
-            [1,4,7],
-            [2,5,8],
-            [0,4,8],
-            [6,4,2]
-        ]
     
         // winningLogic.forEach(logic=>{
             //     const [a,b,c]=logic;
@@ -52,6 +53,9 @@ function App(){
                     if(cell[a]!==null && cell[a]===cell[b] && cell[b]===cell[c]){
                         return cell[a];
                     }
+                    // if(cell[a]!==null && cell[a]!==cell[b]&& cell[b]!==cell[c]){
+                    //     return "Draw"
+                    // }
                 }
 
                 return false;
@@ -60,6 +64,23 @@ function App(){
     // console.log(winner)
     const isWinner=winner();
 
+    // check for draw
+    // function draw(){
+    //     for(let logic of winningLogic){
+    //         const[a,b,c]=logic;
+    //         if(cell[a]!==null && cell[a]!==cell[b] && cell[b]!==cell[c]){
+    //             return false;
+    //         }
+    //         // if(cell[a]!==null && cell[a]!==cell[b]&& cell[b]!==cell[c]){
+    //         //     return "Draw"
+    //         // }
+    //     }
+
+    //     return false;
+    // }
+
+    // const isDraw=draw()
+    // console.log(isDraw);
     // handleReset
 
     function handleReset(){
@@ -98,7 +119,7 @@ function App(){
             <div onClick={()=>handleClick(8)}  className="cell cell-9">{cell[8]}</div>
 
         </div>
-        
+        <button onClick={handleReset}>Reset</button>
     </div>
     }
    
