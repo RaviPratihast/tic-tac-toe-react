@@ -116,3 +116,11 @@ button:hover{
     font-size: 15px;
     padding:20px 0;
 }
+
+.draw-screen{
+    /* border: 2px solid black; */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
