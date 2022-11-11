@@ -63,24 +63,23 @@ function App(){
             
     // console.log(winner)
     const isWinner=winner();
+    // console.log(isWinner);
 
+
+//   console.log(cell.length);
+
+    function everyElementHave(cellElement){
+        return cellElement!==null;
+    }
     // check for draw
-    // function draw(){
-    //     for(let logic of winningLogic){
-    //         const[a,b,c]=logic;
-    //         if(cell[a]!==null && cell[a]!==cell[b] && cell[b]!==cell[c]){
-    //             return false;
-    //         }
-    //         // if(cell[a]!==null && cell[a]!==cell[b]&& cell[b]!==cell[c]){
-    //         //     return "Draw"
-    //         // }
-    //     }
+   function checkDraw(){
+    if(isWinner===false && cell.every(everyElementHave)){
+        return "Match Draw: Play Again "
+    }
+   }
 
-    //     return false;
-    // }
-
-    // const isDraw=draw()
-    // console.log(isDraw);
+//    console.log(checkDraw());
+const ifDraw=checkDraw();
     // handleReset
 
     function handleReset(){
@@ -119,7 +118,9 @@ function App(){
             <div onClick={()=>handleClick(8)}  className="cell cell-9">{cell[8]}</div>
 
         </div>
-        <button onClick={handleReset}>Reset</button>
+
+        <div className="draw-screen"><h1>{ifDraw}</h1></div>
+        <button onClick={handleReset}>Play Again</button>
     </div>
     }
    
